@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 // Function for Exercise 1.
 void ex1()
@@ -13,7 +14,7 @@ void ex1()
     
     double result = 2 / std::tan(3 * x) - 1 / (12 * x * x + 7 * x -5);
 
-    std::cout << "Result: " << result << std::endl;
+    std::cout << "Result: " << std::fixed << std::setprecision(2) << result << std::endl;
 }
 
 // Function for Exercise 2.
@@ -26,7 +27,7 @@ void ex2()
     
     double radius = a / std::sqrt(3);
 
-    std::cout << "Radius: " << radius << std::endl;
+    std::cout << "Radius: " << std::fixed << std::setprecision(2) << radius << std::endl;
 }
 
 // Function for Exercise 3.
