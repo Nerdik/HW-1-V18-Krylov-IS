@@ -39,14 +39,13 @@ void ex3()
 
     if (a + b > c && a + c > b && b + c > a)
     {
-        if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a)
-        {
-            std::cout << "Rectangular" << std::endl;
-        }
-        else
-        {
-            std::cout << "Not rectangular" << std::endl;
-        }
+        std::cout << (
+            (a * a + b * b == c * c ||
+            a * a + c * c == b * b ||
+            b * b + c * c == a * a)
+            ? "Rectangular"
+            : "Not rectangular"
+        ) << std::endl;
     }
     else
     {
